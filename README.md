@@ -78,11 +78,3 @@ This project demonstrates:
 * REST API design
 * Role-based authorization
 * Database relationships
-* Deployment of a production-ready web application
-
----
-
-
-
-**Kumud Verma**
-Computer Science Student | Full-Stack Developer
