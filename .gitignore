@@ -7,8 +7,8 @@ backend/node_modules
 frontend/node_modules
 
 # Build files
-build
-frontend/build
+# build
+# frontend/build
 
 # Logs
 logs
