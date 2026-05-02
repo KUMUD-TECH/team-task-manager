@@ -61,24 +61,19 @@ app.get(
 
 const path = require("path");
 
-app.use(
-  express.static(
-    path.join(
-      __dirname,
-      "../frontend/build"
-    )
-  )
+const buildPath = path.join(
+  __dirname,
+  "..",
+  "frontend",
+  "build"
 );
 
-app.use((req, res) => {
+app.use(express.static(buildPath));
 
+app.get("*", (req, res) => {
   res.sendFile(
-    path.join(
-      __dirname,
-      "../frontend/build/index.html"
-    )
+    path.join(buildPath, "index.html")
   );
-
 });
 
 /* SERVER START */
